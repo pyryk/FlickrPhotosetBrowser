@@ -10,7 +10,7 @@ A simple web app for showing photosets from a Flickr user chronologically.
 4. Add the following snippet to a script element in your html.
 5. Add `<div id="flickrphotos"></div>` to your html
 
-#### Snippet to initialize the app
+### Snippet to initialize the app
 
     flickrphotosets.api_key = "your_flickr_api_key";
     flickrphotosets.user_id = "target_user_id";
