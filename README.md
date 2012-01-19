@@ -8,6 +8,7 @@ A simple web app for showing photosets from a Flickr user chronologically.
 2. Get your Flickr user ID by using e.g. http://idgettr.com/
 3. Paste the contents of this app to your web app folder
 4. Add the following snippet to your html.
+
     <script type="text/javascript">
       flickrphotosets.api_key = "your_flickr_api_key";
       flickrphotosets.user_id = "target_user_id";
@@ -16,6 +17,7 @@ A simple web app for showing photosets from a Flickr user chronologically.
         flickrphotosets.init('#flickrphotos');
       });
     </script>
+    
 5. Add `<div id="flickrphotos"></div>` to your html
 
 ### Widget
@@ -23,7 +25,7 @@ A simple web app for showing photosets from a Flickr user chronologically.
 This app also provides a simple widget for showing most recent photosets. It 
 is suitable for narrower spaces such as sidebar. To use it, replace the snippet 
 in step 4 with
-    <script type="text/javascript">
+
       flickrphotosets.api_key = "your_flickr_api_key";
       flickrphotosets.user_id = "target_user_id";
       flickrphotosets.link_url = "link_to_your_proper_gallery_page";
