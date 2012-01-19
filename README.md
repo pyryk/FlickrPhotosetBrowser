@@ -39,6 +39,20 @@ For historical reasons, this repository also includes a Wordpress plugin. To
 use it, paste the directory to wp-content/plugins and edit plugin settings in
 Wordpress settings -> Flickr photosets
 
+### Localization
+
+This app supports very simple localization. To change strings, change the
+following options (default values in parentheses):
+
+* flickrphotosets.texts.flickr_link ("This photoset in Flickr")
+* flickrphotosets.texts.photos ("photos")
+* flickrphotosets.texts.updated ("updated")
+
+Example
+
+    flickrphotosets.texts.flickr_link = "See this photoset in Flickr";
+
+
 ### Depedencies
 
 * jQuery (tested with 1.7.1)

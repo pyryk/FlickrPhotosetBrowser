@@ -26,16 +26,13 @@ function flickr_photosets_show( $attrs ) {
     <script type="text/javascript" charset="utf-8">
       flickrphotosets.api_key = "'. $options['apikey'].'";
       flickrphotosets.user_id = "'.$options['username'].'";
-      flickrphotosets.texts.flickr_link = "Albumi Flickr-palvelussa";
-      flickrphotosets.texts.updated = "päivitetty";
-      flickrphotosets.texts.photos = "kuvaa";
+      flickrphotosets.texts.flickr_link = "'.$options['loc_flickr_link'].'";
+      flickrphotosets.texts.updated = "'.$options['loc_updated'].'";
+      flickrphotosets.texts.photos = "'.$options['loc_photos'].'";
       
       flickrphotosets.init("#flickrphotos");
     </script>
     <div id="flickrphotos">
-    </div>
-    <div class="flickrlink">
-      <p>Kaikki kuvat löytyvät myös <a href="http://www.flickr.com/photos/'.$options['username'].'/sets/">Flickr-palvelusta</a>.</p>
     </div>
     
   ';
@@ -72,6 +69,30 @@ function plugin_setting_string() {
 		<td>
 		  <input id='flickr_photosets_apikey' name='flickr_photosets_options[apikey]' size='40' type='text' value='<?php echo $options['apikey'] ?>' /><br />
 			<span class="description">Flickr API key. You need to get one from Flickr developer site.</span>
+		</td>
+	</tr>
+	<tr>
+	    <th colspan="2"><b>Localization</b></th>
+	</tr>
+	<tr>
+		<th scope="row">This photoset in Flickr</th>
+		<td>
+		  <input id='flickr_photosets_loc_flickr_link' name='flickr_photosets_options[loc_flickr_link]' size='40' type='text' value='<?php echo $options['loc_flickr_link'] ?>' /><br />
+			<span class="description">String for "This photoset in Flickr" link.</span>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Photos</th>
+		<td>
+		  <input id='flickr_photosets_loc_photos' name='flickr_photosets_options[loc_photos]' size='40' type='text' value='<?php echo $options['loc_photos'] ?>' /><br />
+			<span class="description">String for "photos" text</span>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Updated</th>
+		<td>
+		  <input id='flickr_photosets_loc_updated' name='flickr_photosets_options[loc_updated]' size='40' type='text' value='<?php echo $options['loc_updated'] ?>' /><br />
+			<span class="description">String for "updated" text</span>
 		</td>
 	</tr>
 	<?php
