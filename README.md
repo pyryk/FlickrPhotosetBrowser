@@ -7,16 +7,15 @@ A simple web app for showing photosets from a Flickr user chronologically.
 1. Get Flickr API key for your application from http://www.flickr.com/services/apps/create/apply/
 2. Get your Flickr user ID by using e.g. http://idgettr.com/
 3. Paste the contents of this app to your web app folder
-4. Add the following snippet to a script elemtent in your html.
-
-      `flickrphotosets.api_key = "your_flickr_api_key";
-      flickrphotosets.user_id = "target_user_id";
-    
-      jQuery(function() {
-        flickrphotosets.init('#flickrphotos');
-      });`
-    
+4. Add the following snippet to a script element in your html.
 5. Add `<div id="flickrphotos"></div>` to your html
+
+    flickrphotosets.api_key = "your_flickr_api_key";
+    flickrphotosets.user_id = "target_user_id";
+    
+    jQuery(function() {
+        flickrphotosets.init('#flickrphotos');
+    });
 
 ### Widget
 
