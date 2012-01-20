@@ -1,6 +1,6 @@
 # Flickr Photosets Browser
 
-A simple web app for showing photosets from a Flickr user chronologically.
+A simple web app for showing photosets of a Flickr user chronologically.
 
 ## Usage
 
