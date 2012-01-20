@@ -22,7 +22,7 @@ A simple web app for showing photosets of a Flickr user chronologically.
 ### Widget
 
 This app also provides a simple widget for showing most recent photosets. It 
-is suitable for narrower spaces such as sidebar. To use it, replace the snippet 
+is suitable for narrower space such as a sidebar. To use it, replace the snippet 
 in step 4 with
 
       flickrphotosets.api_key = "your_flickr_api_key";
