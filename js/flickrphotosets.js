@@ -2,6 +2,7 @@
  * Flickr photosets browser 
  * version 0.1
  * By Pyry Kröger (http://pkroger.org)
+ * https://github.com/pyryk/FlickrPhotosetBrowser
  * 
  */
 var flickrphotosets = {
